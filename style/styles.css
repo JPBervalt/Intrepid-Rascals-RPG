@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    background: #333;
+    padding: 20px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/13a0f96a-4574-46c9-8878-8f4bde065bfb/dbeb4wv-fb196c7e-86bd-46e0-8d1f-8d5e8dd9b2cd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzYTBmOTZhLTQ1NzQtNDZjOS04ODc4LThmNGJkZTA2NWJmYlwvZGJlYjR3di1mYjE5NmM3ZS04NmJkLTQ2ZTAtOGQxZi04ZDVlOGRkOWIyY2QuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hIsmVYPSAGz_4r8fMf56oi-rMfKWxNud_hFNg0niyw4');
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+  }
+  
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color:#fafafa;
+}
+
+header .navbar {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* Estilo para o footer */
+footer .navbar {
+  background-color: #333; /* Cor de fundo */
+  padding: 20px; /* Espaçamento interno */
+  display: flex; /* Ativar o modelo flexbox */
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+  height: 10%; /* Defina uma altura de 100% para o footer */
+}
+
+/* Estilo para os links no footer */
+footer .navbar a {
+  color: white; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte menor */
+  text-decoration: none; /* Remover sublinhado dos links */
+  margin: 0 10px; /* Margem horizontal para separação dos itens */
+}
+
+/* Estilo para o separador "|" entre os itens */
+footer .navbar a:not(:last-child)::after {
+  content: " |"; /* Adicionar o separador */
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Ajuste a duração e o tipo da transição conforme necessário */
+}
+
+/* Estilos da seção de herói (hero) */
+.hero {
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  padding: 100px 0;
+  color:#fafafa;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color:#fafafa;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* Estilos da seção de recursos (feature) */
+.feature {
+  padding: 40px;
+  background-color: none;
+  text-align: center;
+  color:#fafafa;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color:#fafafa;
+}
+
+.feature-card {
+  border: 1px solid #ddd;
+  background-color: rgba(63, 59, 59, 0.5);
+  border-radius: 10px;
+  padding: 10px; /* Reduzir o preenchimento para diminuir o tamanho do card */
+  width: 420px; /* Defina a largura desejada */
+  height: 110px; /* Defina a altura desejada */
+  transition: transform 0.3s; /* Adicione uma transição suave para suavizar a mudança de estilo */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.feature-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+  canvas {
+    display: block;
+  }
+  #d20 {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px;
+}  
+
+/* Estilize o cabeçalho */
+header {
+  background-color: #343a40; /* Cor de fundo do cabeçalho */
+  padding: 10px 0; /* Espaçamento interno superior e inferior */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilize o logotipo e links de navegação */
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff; /* Cor do texto */
+  font-weight: bold; /* Peso da fonte */
+}
+
+/* Estilize o botão de navegação para dispositivos móveis */
+.navbar-toggler-icon {
+  background-color: #fff; /* Cor do ícone do botão de alternância */
+}
+
+/* Estilize a barra de navegação (ativa) */
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #ff6600; /* Cor de fundo do link ativo */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+/* Estilize a barra de navegação (itens do menu) */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; /* Cor do texto */
+  margin-right: 20px; /* Espaçamento entre os itens de menu */
+  padding: 0.5rem 1rem; /* Espaçamento interno vertical e horizontal */
+  transition: background-color 0.2s, color 0.2s; /* Transição de cor de fundo e cor do texto ao passar o mouse */
+}
+
+/* Estilize o hover dos itens do menu */
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #555; /* Cor de fundo no hover */
+  color: #fff; /* Cor do texto no hover */
+}
+
+.toggle-button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilize a barra de navegação (itens do menu) */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Espaçamento interno vertical e horizontal */
+  margin-right: 20px; /* Espaçamento entre os itens de menu */
+}
+
+/* Estilize o hover dos itens do menu */
+/* Estilize a barra de navegação (itens do menu) */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Espaçamento interno vertical e horizontal */
+  margin-right: 20px; /* Espaçamento entre os itens de menu */
+  transition: background-color 0.2s, color 0.2s, padding 0.2s; /* Transição de cor de fundo, cor do texto e padding ao passar o mouse */
+}
+
+/* Estilize o hover dos itens do menu */
+.navbar-nav .nav-link:hover {
+  background-color: #555; /* Cor de fundo no hover */
+  color: #fff; /* Cor do texto no hover */
+  padding: 0.7rem 1.1rem; /
+}
+
+
+.toggle-button:hover {
+    background-color: #5bc0de; 
+    color: #fff; 
+}
+#paginaPersonagens {
+  min-height: 500px; 
+}
+
+.card-img-top{
+  width: 50%;
+  height: 50%
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  background: #555;
+}
+
+.col-md-4.mb-4 {
+  display: flex;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #555;
+}
+
+.card h3,.card h5,.card p,.card h4,.card ul{
+  color:#fafafa;
+}
+
+
+
+.card.collapsed {
+  max-height: 150px; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; 
+}
+
+.card.expanded {
+  max-height: none; 
+  transition: max-height 0.3s ease-in-out; 
+}
+
+#titleStories{
+  color: #fafafa;
+}
+.historias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hist-card {
+  margin-bottom: 10px; 
+  padding: 15px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(63, 59, 59, 0.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px;
+  color: #fafafa;
+  
+}
+
+.hist-card:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hist-img-top {
+  max-width: 100%;
+  height: auto;
+  max-height: 220px; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.hist-title {
+  font-size: 1.1rem; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.hist-text {
+  font-size: 1rem;
+  line-height: 1.3; 
+  margin-top: 5px;
+}
