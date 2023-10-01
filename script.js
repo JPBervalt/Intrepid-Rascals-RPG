@@ -458,23 +458,15 @@ function gerarCartoesHistorias() {
     });
 }
 
-
-
-// ...
-
 document.getElementById("linkHistorias").addEventListener("click", function(event) {
     // Impede o comportamento padrão do link
     event.preventDefault();
-    
-    // Carrega a página de personagens quando o link "Personagens" for clicado
     carregarPaginaHistorias();
 });
 
 document.getElementById("linkRegras").addEventListener("click", function(event) {
     // Impede o comportamento padrão do link
     event.preventDefault();
-    
-    // Carrega a página de regras quando o link "Regras" for clicado
     carregarPaginaRegras();
 });
 
@@ -503,4 +495,30 @@ function carregarPaginaRegras() {
 document.getElementById("linkRegras").addEventListener("click", function(event) {
     event.preventDefault();
     carregarPaginaRegras();
+});
+
+function carregarPaginaItens(){
+    //carrega página de itens
+    document.getElementById("conteudo-principal").classList.add("fade-out");
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "items.html", true);
+
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState === 4 && xhr.status === 200){
+
+            setTimeout(function(){
+                document.getElementById("conteudo-principal").innerHTML = xhr.responseText;
+
+                document.getElementById("conteudo-principal").classList.remove("fade-out");
+            }, 500)
+        }
+    };
+    xhr.send();
+    
+}
+
+document.getElementById("linkItems").addEventListener("click", function (event) {
+    event.preventDefault();
+    carregarPaginaItens();
 });

@@ -1,0 +1,27 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style/styles.css">
+<script src="script.js"></script> 
+<script src="getItems.js"></script> 
+
+<section class="searchItemsSec">
+    <div class="containerSearchItems"><br>
+        <h2>Pesquise aqui itens para te ajudar na aventura:</h2><br>
+        <div class="search-bar">
+            <input type="text" id="item-search" placeholder="Digite o nome do item...">
+            <a href='#' onclick="callSearchItemsAPI()" id="search-items-button">Pesquisar</a>
+        </div>
+    </div>
+</section>
+
+<section id="returnItemsSec">
+    <div class="containerReturnItems">
+        <!-- Resultados da pesquisa de itens serão exibidos aqui -->
+        <ul class="item-list"></ul>
+
+    </div>
+
+   
+</section>
+
+
